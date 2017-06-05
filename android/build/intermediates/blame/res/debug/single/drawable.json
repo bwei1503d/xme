@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/build/intermediates/res/merged/debug/drawable/launcher_icon.png",
+        "source": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/src/main/res/drawable/launcher_icon.png"
+    },
+    {
+        "merged": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/build/intermediates/res/merged/debug/drawable/share_via_barcode.png",
+        "source": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/src/main/res/drawable/share_via_barcode.png"
+    }
+]

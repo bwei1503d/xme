@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/build/intermediates/res/merged/debug/menu/encode.xml",
+        "source": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/src/main/res/menu/encode.xml"
+    },
+    {
+        "merged": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/build/intermediates/res/merged/debug/menu/capture.xml",
+        "source": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/src/main/res/menu/capture.xml"
+    },
+    {
+        "merged": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/build/intermediates/res/merged/debug/menu/history.xml",
+        "source": "/Users/muhanxi/Desktop/bwei_repo/xme/xme/android/src/main/res/menu/history.xml"
+    }
+]
