@@ -9,8 +9,10 @@ import com.bwei.xme.alipay.PayDemoActivity;
 import com.bwei.xme.amap.AMapActivity;
 import com.bwei.xme.amap.AMapUtils;
 import com.bwei.xme.anim.AnimActivity;
+import com.bwei.xme.autolayout.AutoLayout;
 import com.bwei.xme.customview.FlowActivity;
 import com.bwei.xme.exception.ReportActivity;
+import com.bwei.xme.ketang.CircleActivity;
 import com.bwei.xme.listview.ListViewActivity;
 import com.bwei.xme.zxing.ZxingActivity;
 import com.orhanobut.logger.Logger;
@@ -27,8 +29,7 @@ public class MainActivity extends Activity {
 
 //        AMapUtils.getInstance(getApplicationContext()).start();
 
-        Logger.d("aaaaa");
-        Logger.e("1111111");
+       
 
 
     }
@@ -45,7 +46,7 @@ public class MainActivity extends Activity {
 
 
     public void  go(View view){
-        startActivity(new Intent(this, ReportActivity.class));
+        startActivity(new Intent(this, CircleActivity.class));
 
     }
 

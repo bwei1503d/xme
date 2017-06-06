@@ -54,7 +54,11 @@
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".alipay.PayDemoActivity" />
         <activity android:name=".alipay.H5PayDemoActivity" />
-        <activity android:name=".exception.ReportActivity" android:process=":crash"></activity>
+        <activity
+            android:name=".exception.ReportActivity"
+            android:process=":crash" />
+        <activity android:name=".autolayout.AutoLayout" />
+        <activity android:name=".ketang.CircleActivity"></activity>
     </application>
 
 </manifest>

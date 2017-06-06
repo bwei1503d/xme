@@ -84,6 +84,7 @@ public class CircleView extends View {
                 invalidate();
 
 
+
                 break;
             case MotionEvent.ACTION_UP:
                 x = event.getX() ;

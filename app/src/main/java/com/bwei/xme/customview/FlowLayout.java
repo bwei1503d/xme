@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class FlowLayout extends ViewGroup
 {
@@ -18,6 +20,9 @@ public class FlowLayout extends ViewGroup
 	public FlowLayout(Context context, AttributeSet attrs)
 	{
 		super(context, attrs);
+
+
+
 	}
 
 	@Override

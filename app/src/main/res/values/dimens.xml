@@ -17,4 +17,7 @@
 <resources>
   <dimen name="standard_padding">8dip</dimen>
   <dimen name="half_padding">4dip</dimen>
+
+  <dimen name="c_btn_width">100dp</dimen>
+  <dimen name="c_btn_height">200dp</dimen>
 </resources>
