@@ -60,7 +60,8 @@
         <activity android:name=".autolayout.AutoLayout" />
         <activity android:name=".ketang.CircleActivity" />
         <activity android:name=".customview.ImageViewerActivity" />
-        <activity android:name=".ketang.PhotoViewActivity"></activity>
+        <activity android:name=".ketang.PhotoViewActivity" />
+        <activity android:name=".ketang.ListViewCheckbox"></activity>
     </application>
 
 </manifest>

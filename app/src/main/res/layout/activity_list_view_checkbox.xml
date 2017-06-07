@@ -5,13 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.bwei.xme.ketang.PhotoViewActivity">
+    tools:context="com.bwei.xme.ketang.ListViewCheckbox">
 
-    <uk.co.senab.photoview.PhotoView
-        android:id="@+id/photoview"
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_id"/>
+
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/timg"/>
+        android:id="@+id/listview_id"/>
 
 
 </LinearLayout>

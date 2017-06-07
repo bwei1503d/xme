@@ -15,6 +15,7 @@ import com.bwei.xme.customview.FlowActivity;
 import com.bwei.xme.customview.ImageViewerActivity;
 import com.bwei.xme.exception.ReportActivity;
 import com.bwei.xme.ketang.CircleActivity;
+import com.bwei.xme.ketang.ListViewCheckbox;
 import com.bwei.xme.ketang.PhotoViewActivity;
 import com.bwei.xme.listview.ListViewActivity;
 import com.bwei.xme.zxing.ZxingActivity;
@@ -49,7 +50,7 @@ public class MainActivity extends Activity {
 
 
     public void  go(View view){
-        startActivity(new Intent(this, PhotoViewActivity.class));
+        startActivity(new Intent(this, ListViewCheckbox.class));
 
     }
 
