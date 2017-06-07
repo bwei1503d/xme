@@ -63,6 +63,17 @@ public class CustomImageView extends ImageView implements ScaleGestureDetector.O
     public boolean onTouchEvent(MotionEvent event) {
 
 
+        switch (event.getAction()){
+
+            case MotionEvent.ACTION_DOWN:
+
+                break;
+            case MotionEvent.ACTION_MOVE:
+
+                break;
+
+        }
+
         scaleGestureDetector.onTouchEvent(event);
 
         return true;
@@ -72,8 +83,11 @@ public class CustomImageView extends ImageView implements ScaleGestureDetector.O
     @Override
     public boolean onScale(ScaleGestureDetector detector) {
 
+
+        //缩放因子
         float scaleFactor = detector.getScaleFactor() ;
         System.out.println("detector = " + detector.getScaleFactor());
+        //缩放
         matrix.postScale(scaleFactor, scaleFactor,detector.getFocusX(),
         detector.getFocusY());
         setImageMatrix(matrix);

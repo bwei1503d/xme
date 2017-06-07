@@ -58,7 +58,9 @@
             android:name=".exception.ReportActivity"
             android:process=":crash" />
         <activity android:name=".autolayout.AutoLayout" />
-        <activity android:name=".ketang.CircleActivity"></activity>
+        <activity android:name=".ketang.CircleActivity" />
+        <activity android:name=".customview.ImageViewerActivity" />
+        <activity android:name=".ketang.PhotoViewActivity"></activity>
     </application>
 
 </manifest>
