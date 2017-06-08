@@ -136,7 +136,7 @@ public final class CameraConfigurationManager {
 
     /**
      * 从相机支持的分辨率中计算出最适合的预览界面尺寸
-     *
+     *http://blog.csdn.net/u013560890/article/details/49338031
      * @param parameters
      * @param screenResolution
      * @return

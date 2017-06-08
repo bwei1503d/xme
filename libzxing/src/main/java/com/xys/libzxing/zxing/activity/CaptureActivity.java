@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.SurfaceHolder;
@@ -52,6 +53,8 @@ import java.lang.reflect.Field;
  *
  * @author dswitkin@google.com (Daniel Switkin)
  * @author Sean Owen
+ *
+ * http://blog.sina.com.cn/s/blog_79dfe1270101canv.html
  */
 public final class CaptureActivity extends AppCompatActivity implements SurfaceHolder.Callback {
 
@@ -102,6 +105,9 @@ public final class CaptureActivity extends AppCompatActivity implements SurfaceH
         animation.setRepeatMode(Animation.RESTART);
         scanLine.startAnimation(animation);
     }
+
+
+
 
     @Override
     protected void onResume() {

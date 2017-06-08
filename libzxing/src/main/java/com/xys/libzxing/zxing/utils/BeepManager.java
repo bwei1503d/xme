@@ -32,7 +32,7 @@ import java.io.Closeable;
 import java.io.IOException;
 
 /**
- * Manages beeps and vibrations for {@link CaptureActivity}.
+ * Manages beeps and vibrations for {@link }.
  */
 public class BeepManager implements MediaPlayer.OnCompletionListener, MediaPlayer.OnErrorListener, Closeable {
 
@@ -55,7 +55,7 @@ public class BeepManager implements MediaPlayer.OnCompletionListener, MediaPlaye
     private static boolean shouldBeep(SharedPreferences prefs, Context activity) {
         boolean shouldPlayBeep = true;
         if (shouldPlayBeep) {
-            // See if sound settings overrides this
+            // See if sound settings overrides this静音、震动、铃声
             AudioManager audioService = (AudioManager) activity.getSystemService(Context.AUDIO_SERVICE);
             if (audioService.getRingerMode() != AudioManager.RINGER_MODE_NORMAL) {
                 shouldPlayBeep = false;
@@ -72,6 +72,7 @@ public class BeepManager implements MediaPlayer.OnCompletionListener, MediaPlaye
             // The volume on STREAM_SYSTEM is not adjustable, and users found it
             // too loud,
             // so we now play on the music stream.
+//            AudioManager.STREAM_MUSIC  /音乐回放即媒体音量/
             activity.setVolumeControlStream(AudioManager.STREAM_MUSIC);
             mediaPlayer = buildMediaPlayer(activity);
         }

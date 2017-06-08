@@ -54,8 +54,10 @@ public class InactivityTimer {
         cancel();
         inactivityTask = new InactivityAsyncTask();
         if (Build.VERSION.SDK_INT >= 11) {
+            // 修改成了 并行
             inactivityTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         } else {
+            //默认并行
             inactivityTask.execute();
         }
     }
@@ -69,6 +71,9 @@ public class InactivityTimer {
             Log.w(TAG, "PowerStatusReceiver was never registered?");
         }
     }
+
+
+
 
     public synchronized void onResume() {
         if (registered) {
@@ -98,6 +103,18 @@ public class InactivityTimer {
             if (Intent.ACTION_BATTERY_CHANGED.equals(intent.getAction())) {
                 // 0 indicates that we're on battery
                 boolean onBatteryNow = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1) <= 0;
+//                IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+//                Intent batteryStatus = context.registerReceiver(null, ifilter);
+////你可以读到充电状态,如果在充电，可以读到是usb还是交流电
+//// 是否在充电
+//                int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
+//                boolean isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING ||
+//                        status == BatteryManager.BATTERY_STATUS_FULL;
+//
+//// 怎么充
+//                int chargePlug = batteryStatus.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
+//                boolean usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
+//                boolean acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC;
                 if (onBatteryNow) {
                     InactivityTimer.this.onActivity();
                 } else {

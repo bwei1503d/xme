@@ -25,7 +25,8 @@ public class OpenCameraInterface {
 
     /**
      * Opens the requested camera with {@link Camera#open(int)}, if one exists.
-     *
+     *0 后置摄像头
+     * 1 前置摄像头
      * @param cameraId camera ID of the camera to use. A negative value means
      *                 "no preference"
      * @return handle to {@link Camera} that was opened
